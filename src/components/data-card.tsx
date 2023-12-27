@@ -40,7 +40,7 @@ export const DataCard = ({ anime, japanese, index }: DataCardProps) => {
             whileHover={{
                 scale: 1.1,
                 position: 'relative',
-                zIndex: 999,
+                zIndex: 10,
                 transition: { delay: 0 },
             }}
         >

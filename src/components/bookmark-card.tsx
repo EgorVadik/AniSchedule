@@ -49,12 +49,8 @@ export const BookmarkCard = ({ anime, japanese }: BookmarkCardProps) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            whileHover={{ scale: 1.1, position: 'relative', zIndex: 999 }}
         >
-            <Link
-                href={`/anime/${anime.id}`}
-                className='relative flex flex-col gap-2'
-            >
+            <div className='relative flex flex-col gap-2'>
                 <Image
                     src={anime.img}
                     alt={anime.title}
@@ -99,7 +95,7 @@ export const BookmarkCard = ({ anime, japanese }: BookmarkCardProps) => {
                         <Plus size={20} />
                     </Button>
                 </div>
-            </Link>
+            </div>
         </motion.div>
     )
 }
